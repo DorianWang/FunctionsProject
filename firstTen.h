@@ -23,7 +23,7 @@ int three(int factorNum);
 int four(unsigned int numOne, unsigned int numTwo); 
 int five(char* palString, int strLen);
 int six(int a, int b, char* output);
-      
+int seven(int numsPerLine, int arraySize, int *inputArray);
       
       
 };

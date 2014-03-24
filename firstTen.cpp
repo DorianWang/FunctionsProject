@@ -161,6 +161,25 @@ outputs[j] =0;// strdup(aString);
 return 1;
 }
 
+//7.	Write a function that takes an array of integers and outputs the array numsPerLine integers per line.
+int objectFirst::seven(int numsPerLine, int arraySize, int *inputArray)
+{
+int i,j,k;
+j=0;k=0;
+for (i=0;i<arraySize;i++){
+   cout<<*(inputArray+i)<<" ";    
+   if (i==(j*numsPerLine)-1){
+   cout<<endl;
+   }
+}
+cout<<endl;
+return 1;
+}
+
+
+
+
+
 
 
 

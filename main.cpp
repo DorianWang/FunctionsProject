@@ -7,7 +7,12 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    char bromo[40];
+   char bromo[40];
+   int calbuco[50];
+   for (int i=0;i<50;i++){
+   calbuco[i]=i*2;    
+   }
+    
    objectFirst aso;
    
    cout<<aso.one("abcdefghijk","abcdefghi")<<endl; //A negative number signifies that the end of the array was reached.
@@ -22,6 +27,8 @@ int main(int argc, char *argv[])
    {
    cout<<"INVALID STRING"<<endl; 
    }
+   aso.seven(2,50,calbuco);
+      
    system("PAUSE");
    return EXIT_SUCCESS;
 }
