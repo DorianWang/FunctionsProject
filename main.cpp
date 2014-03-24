@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
    {
    cout<<"INVALID STRING"<<endl; 
    }
-   aso.seven(2,50,calbuco);
+   aso.seven(14,50,calbuco);
       
    system("PAUSE");
    return EXIT_SUCCESS;

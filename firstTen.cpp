@@ -165,11 +165,12 @@ return 1;
 int objectFirst::seven(int numsPerLine, int arraySize, int *inputArray)
 {
 int i,j,k;
-j=0;k=0;
+j=0;k=1;
 for (i=0;i<arraySize;i++){
    cout<<*(inputArray+i)<<" ";    
-   if (i==(j*numsPerLine)-1){
+   if (i==(j*numsPerLine)){
    cout<<endl;
+   j++;
    }
 }
 cout<<endl;
@@ -177,8 +178,21 @@ return 1;
 }
 
 
-
-
+//8.	Write a function that creates a random array of integers containing between minNums and maxNums integers with each integer being between minNum and maxNum. Note that I am using the word between to mean inclusive here. 
+//min numbers must be smaller than max numbers. output must be large enough to hold all the numbers. 
+int objectFirst::eight(int minNums, int maxNums, int minNum, int maxNum, int *output)
+{
+   srand (time(NULL));
+   int temp;
+   int length = rand ()%(maxNums-minNums)+minNums;
+   
+   for (int i=0;i<minNums;i++){
+   temp = rand() % (maxNum-minNum)+minNum;
+   *(output+i) = temp;
+   }
+return 1;
+}    
+    
 
 
 

@@ -6,6 +6,9 @@
 #include <string>
 #include <iostream>
 #include <cmath>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h> 
+
 
 using namespace std;
 
@@ -24,7 +27,10 @@ int four(unsigned int numOne, unsigned int numTwo);
 int five(char* palString, int strLen);
 int six(int a, int b, char* output);
 int seven(int numsPerLine, int arraySize, int *inputArray);
-      
+int eight(int minNums, int maxNums, int minNum, int maxNum, int *output);
+
+
+
       
 };
 
