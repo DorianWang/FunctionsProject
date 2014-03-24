@@ -26,9 +26,12 @@ int three(int factorNum);
 int four(unsigned int numOne, unsigned int numTwo); 
 int five(char* palString, int strLen);
 int six(int a, int b, char* output);
-int seven(int numsPerLine, int arraySize, int *inputArray);
-int eight(int minNums, int maxNums, int minNum, int maxNum, int *output);
 
+int seven(int numsPerLine, int arraySize, int *inputArray);
+int seven(int numsPerLine, int arraySize, char *inputArray);//yey for overloading
+
+int eight(int minNums, int maxNums, int minNum, int maxNum, int* output);
+int nine(int minChars, int maxChars, int minChar, int maxChar, char* output);
 
 
       
