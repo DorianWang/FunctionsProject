@@ -239,20 +239,47 @@ return length;
 int objectFirst::ten(int *inArray, int* output, int aLen)
 {
 int i=0;
+int temp=0;
 
-int a=0;int b=0;int c=0;//1st, 2nd, and 3rd slots.
+
+int a=SMALL_NEG;int b=SMALL_NEG;int c=SMALL_NEG;//1st, 2nd, and 3rd slots. They have been set to the smallest number possible.
 
 if (aLen<3){
 return 0;//failure, there is no 3rd value   
 }
 
 while(true){
-temp = *(inArray+i);            
+   if (i==aLen){
+      break;   
+   }
+   temp=0;
+   temp = *(inArray+i);            
+   
+   if (temp>a){
+      c=b;
+      b=a;
+      a=temp;
+      i++;
+      continue;
+   }
+   
+   if (temp>b){
+      c=b;  
+      b=temp;
+      i++;
+      continue;
+   }
 
-            
+   if (temp>c){
+      c=temp;
+      i++;
+      continue;
+   }
+   i++;        
 }
 
-
+*output = c;
+return 1;//success!
 }
 
 

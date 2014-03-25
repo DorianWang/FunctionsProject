@@ -5,8 +5,8 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = main.o firstTen.o $(RES)
-LINKOBJ  = main.o firstTen.o $(RES)
+OBJ  = main.o firstTen.o lastTen.o $(RES)
+LINKOBJ  = main.o firstTen.o lastTen.o $(RES)
 LIBS =  -L"E:/programs/Dev-Cpp/lib"  
 INCS =  -I"E:/programs/Dev-Cpp/include" 
 CXXINCS =  -I"E:/programs/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"E:/programs/Dev-Cpp/include/c++/3.4.2/backward"  -I"E:/programs/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"E:/programs/Dev-Cpp/include/c++/3.4.2"  -I"E:/programs/Dev-Cpp/include" 
@@ -31,3 +31,6 @@ main.o: main.cpp
 
 firstTen.o: firstTen.cpp
 	$(CPP) -c firstTen.cpp -o firstTen.o $(CXXFLAGS)
+
+lastTen.o: lastTen.cpp
+	$(CPP) -c lastTen.cpp -o lastTen.o $(CXXFLAGS)

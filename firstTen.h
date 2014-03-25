@@ -9,6 +9,7 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h> 
 
+#define SMALL_NEG -2147483647 
 
 using namespace std;
 
@@ -32,7 +33,7 @@ int seven(int numsPerLine, int arraySize, char *inputArray);//yey for overloadin
 
 int eight(int minNums, int maxNums, int minNum, int maxNum, int* output);
 int nine(int minChars, int maxChars, int minChar, int maxChar, char* output);
-
+int ten(int *inArray, int* output, int aLen);
 
       
 };
