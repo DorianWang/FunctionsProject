@@ -355,21 +355,40 @@ int randNumValue=0;
 int randNumPos=0;
 int randNumPos = rand ()%(length);
 int randNumValue =*(anArray+ randNumPos);
+
+int outputArray[length];
+int l=0;//counter for the above array;
     
 int smallArray[length];//contains numbers smaller than the selected number.
 int largeArray[length];//contains numbers bigger than the selected number.
-int j,k;//j is for small array, kis for large array.
+int j,k;//j is for small array, k is for large array.
 j=0;k=0;
     
-   for (int i=0;i<length;i++){
-       if ()
+   for (int i=0;i<length;i++){   
+      if (*(anArray+i)>randNumValue){
+         largeArray[k]=*(anArray+i);
+         k++;
+      }
+      
+      if (*(anArray+i)<=randNumValue){
+         smallArray[j]=*(anArray+i);
+         j++;
+      }
    }
     
+   for (int a = 0;a<j;a++){
+      outputArray[a]=smallArray[a];
+   }
+   outputArray[j+1]=randNumValue;
     
+   for (int a = j+2;a<length;a++){
+      outputArray[a]=smallArray[a];
+   }
     
-    
-    
-    
+    for (int a = 0;a<length;a++){
+      output[a]=outputArray[a];
+   }
+return 1;
 }
     
     
